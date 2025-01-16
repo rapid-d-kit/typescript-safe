@@ -14,7 +14,7 @@ export function assert(condition?: unknown, message?: string): asserts condition
 
 
 export function assertDefinedString(arg: unknown, message?: string): asserts arg is string {
-  assert(typeof message === 'string' && message.trim().length > 0, message);
+  assert(typeof arg === 'string' && arg.trim().length > 0, message);
 }
 
 export function assertInteger(arg: unknown, message?: string): asserts arg is number {
